@@ -275,7 +275,7 @@
                                  client
                                  (make-create-link-parms :client-id 0 :lock-timeout 1000 :device device))))
              (lid (create-link-resp-lid create-link-resp))
-             (max-recv-size (create-link-resp-max-recv-size create-link-resp))
+             (max-recv-size (max 256 (min 262144 (create-link-resp-max-recv-size create-link-resp)))) ;;Limit max-recv-size to 256...256k
              (vxi11-conn (if extant-vxi11-conn
                              (progn
                                (setf (vxi11-conn-lid extant-vxi11-conn) lid)
