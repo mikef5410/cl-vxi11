@@ -1,0 +1,15 @@
+[submodule "dragons"]
+	path = dragons
+	url = https://github.com/fjames86/dragons.git
+	branch = master
+[submodule "drx"]
+	path = drx
+	url = https://github.com/fjames86/drx.git
+	branch = master
+[submodule "fsocket"]
+	path = fsocket
+	url = https://github.com/fjames86/fsocket.git
+	branch = master
+[submodule "frpc2"]
+	path = frpc2
+	url = https://github.com/fjames86/frpc2.git
